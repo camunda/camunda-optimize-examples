@@ -17,19 +17,9 @@ still want to analyze certain fields of those variables.
 
 ### How does it work?
 
-To give you a better understanding of how variables are imported in Optimize, 
-have a look at the following diagram:
-
-![Variable Import][1]
-
-Using the engine REST-API Optimize fetches all variable, but the variables 
-that contain binary data (e.g. pdfs) from the engine. This also includes complex 
-variables like JSON, XML oder Java object variables. Then those variables are 
-passed through all variable plugins that are configured in Optimize. Here you
-can extract the fields of complex variable and add them as primitive variables
-to the variable stream. All variables that are still available after the plugins 
-are filtered again such that Optimize only imports primitive typed variables. 
-Finally, the primitive variables are persisted to Elasticsearch.
+To see how the import in Optimize works in general, have a look at the [documentation][5]. 
+The details of the variable import and how the plugin hooks into that 
+are explained in the [variable import plugin readme][6].
 
 ### Setup your environment
 
@@ -200,3 +190,5 @@ to Optimize (if they are not complex or binary variables).
 [2]: src/main/java/org/camunda/optimize/examples/TransformComplexVariables.java
 [3]: src/main/java/org/camunda/optimize/examples/Customer.java
 [4]: pom.xml
+[5]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
+[6]: ../README.md

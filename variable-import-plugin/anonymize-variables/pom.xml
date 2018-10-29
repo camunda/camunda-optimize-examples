@@ -11,15 +11,6 @@
 
   <artifactId>anonymize-variables</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.camunda.optimize</groupId>
-      <artifactId>plugin</artifactId>
-      <version>2.2.0</version>
-    </dependency>
-
-  </dependencies>
-
   <repositories>
     <repository>
       <id>camunda-bpm-nexus</id>
@@ -29,19 +20,5 @@
       </url>
     </repository>
   </repositories>
-
-  <build>
-    <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
-    </plugins>
-  </build>
-
 
 </project>

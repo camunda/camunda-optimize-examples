@@ -19,18 +19,9 @@ data and still analyze the process.
 
 ### How does it work?
 
-To give you a better understanding of how variables are imported in Optimize, 
-have a look at the following diagram:
-
-![Variable Import][1]
-
-Using the engine REST-API Optimize fetches all variable, but the variables 
-that contain binary data (e.g. pdfs) from the engine. This also includes complex 
-variables like JSON, XML oder Java object variables. Then those variables are 
-passed through all variable plugins that are configured in Optimize. All variables 
-that are still available after the plugins are filtered again such that Optimize
-only imports primitive typed variables. Finally, the primitive variables are 
-persisted to Elasticsearch.
+To see how the import in Optimize works in general, have a look at the [documentation][4]. 
+The details of the variable import and how the plugin hooks into that 
+are explained in the [variable import plugin readme][5].
 
 ### Setup your environment
 
@@ -135,3 +126,5 @@ binary variables).
 [1]: ../../docs/optimize-variable-import.png
 [2]: src/main/java/org/camunda/optimize/examples/AnonymizeSensitiveVariables.java
 [3]: pom.xml
+[4]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
+[5]: ../README.md

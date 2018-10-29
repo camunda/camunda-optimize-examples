@@ -1,6 +1,6 @@
 # Optimize variable plugin - filter out variables that you don't want in Optimize
 
-This example demonstrates how to use an Optimize variable plugin to hook into the
+This example demonstrates how to use an Optimize var.iable plugin to hook into the
 Optimize import and filter out variables you don't want to be added to Optimize. 
 
 After having read through the guide, you will understand
@@ -17,18 +17,9 @@ analyzed from a legal perspective.
 
 ### How does it work?
 
-To give you a better understanding of how variables are imported in Optimize, 
-have a look at the following diagram:
-
-![Variable Import][1]
-
-Using the engine REST-API Optimize fetches all variable, but the variables 
-that contain binary data (e.g. pdfs) from the engine. This also includes complex 
-variables like JSON, XML oder Java object variables. Then those variables are 
-passed through all variable plugins that are configured in Optimize. All variables 
-that are still available after the plugins are filtered again such that Optimize
-only imports primitive typed variables. Finally, the primitive variables are 
-persisted to Elasticsearch.
+To see how the import in Optimize works in general, have a look at the [documentation][4]. 
+The details of the variable import and how the plugin hooks into that 
+are explained in the [variable import plugin readme][5].
 
 ### Setup your environment
 
@@ -110,6 +101,8 @@ When Optimize is now started, it should automatically filter out variables with 
 and `customerId`. All other variables are still imported to Optimize (if they are not complex or 
 binary variables).
 
-[1]: ../../docs/optimize-variable-import.png
 [2]: src/main/java/org/camunda/optimize/examples/FilterOutSensitiveVariables.java
 [3]: pom.xml
+[4]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
+[5]: ../README.md
+

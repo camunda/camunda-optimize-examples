@@ -13,17 +13,10 @@
 
   <dependencies>
     <dependency>
-      <groupId>org.camunda.optimize</groupId>
-      <artifactId>plugin</artifactId>
-      <version>2.2.0</version>
-    </dependency>
-
-    <dependency>
       <groupId>com.mashape.unirest</groupId>
       <artifactId>unirest-java</artifactId>
       <version>1.4.9</version>
     </dependency>
-
   </dependencies>
 
   <repositories>
@@ -39,14 +32,6 @@
   <build>
     <defaultGoal>install</defaultGoal>
     <plugins>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
-        </configuration>
-      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>

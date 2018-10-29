@@ -8,6 +8,7 @@
   <artifactId>camunda-optimize-examples</artifactId>
   <packaging>pom</packaging>
   <version>1.0.0</version>
+
   <modules>
     <module>variable-import-plugin/filter-out-variables</module>
     <module>variable-import-plugin/anonymize-variables</module>
@@ -15,10 +16,17 @@
     <module>variable-import-plugin/transform-complex-variables</module>
   </modules>
 
-    <properties>
+  <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
 
+  <dependencies>
+    <dependency>
+        <groupId>org.camunda.optimize</groupId>
+        <artifactId>plugin</artifactId>
+        <version>2.2.0</version>
+      </dependency>
+  </dependencies>
 
 </project>
