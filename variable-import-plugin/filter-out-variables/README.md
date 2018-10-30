@@ -1,6 +1,6 @@
 # Optimize variable plugin - filter out variables that you don't want in Optimize
 
-This example demonstrates how to use an Optimize var.iable plugin to hook into the
+This example demonstrates how to use an Optimize variable plugin to hook into the
 Optimize import and filter out variables you don't want to be added to Optimize. 
 
 After having read through the guide, you will understand
