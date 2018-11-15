@@ -1,4 +1,4 @@
-Camunda Optimize examples 
+Camunda Optimize examples
 ====================
 
 A collection of usage examples for Camunda Optimize intended to get you started quickly (e.g. with the plugin system).
@@ -13,19 +13,31 @@ If you clone this repository, use the checkout commands to access the sources fo
 ## Overview
 
 * [Getting Started with Variable Import Plugins](#getting-started-with-variable-import-plugins)
+* [Getting Started with SSO Plugins](#getting-started-with-sso-plugins)
 
 ### Getting Started with Variable Import Plugins
 
-In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization) 
+In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization)
 and adjust variable import. In the following you will find common use cases on why and how to use
 those variable plugins:
 
-| Name                                                                                                   | Support from Version | Keywords                | 
+| Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
 | [Anonymize your Variables](variable-import-plugin/anonymize-variables)                                 | 2.1.0+               | variable, plugin, import|
 | [Filter out Variables](variable-import-plugin/filter-out-variables)                                    | 2.1.0+               | variable, plugin, import|
 | [Resolve reference variables](variable-import-plugin/resolve-reference-variables)                      | 2.1.0+               | variable, plugin, import|
 | [Transform complex variables](variable-import-plugin/transform-complex-variables)                      | 2.2.0+               | variable, plugin, import|
+
+### Getting Started with SSO Plugins
+
+In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization). In the following you will find common use cases on why and how to use
+those SSO plugins:
+
+| Name                                                                                                   | Support from Version | Keywords                |
+| -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
+| [Keycloak Example](sso-plugin-plugin/optimize-ss-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
+
+
 
 ### Contribute!
 
