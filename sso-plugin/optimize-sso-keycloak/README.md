@@ -39,7 +39,7 @@ demo:notdemo
 ## Open Optimize
 
 1. Open WebBrowser
-2. Open `localhost:8095``
+2. Open `localhost:8095`
 3. Login with: `demo:notdemo`
 
 # Show me some some code
@@ -72,8 +72,8 @@ public class KeycloakAuthenticationProvider implements AuthenticationExtractor {
 		} else {
 			logger.info("User logged info", user);
 			result.setAuthenticatedUser(user);
-		  result.setAuthenticated(true);
-		  return result;
+			result.setAuthenticated(true);
+			return result;
 		}
 	}
 }

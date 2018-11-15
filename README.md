@@ -30,12 +30,12 @@ those variable plugins:
 
 ### Getting Started with SSO Plugins
 
-In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization). In the following you will find common use cases on why and how to use
+In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on). In the following you will find common use cases on why and how to use
 those SSO plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Keycloak Example](sso-plugin-plugin/optimize-ss-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
+| [Keycloak Example](sso-plugin/optimize-ss-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
 
 
 
