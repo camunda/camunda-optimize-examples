@@ -24,6 +24,10 @@ services:
 
   elasticsearch:
      environment:
+       - cluster.routing.allocation.disk.threshold_enabled=true
+       - cluster.routing.allocation.disk.watermark.low=1024mb
+       - cluster.routing.allocation.disk.watermark.high=512mb
+       - cluster.routing.allocation.disk.watermark.flood_stage=256mb
        - cluster.name=elasticsearch
        - bootstrap.memory_lock=true
        - discovery.type=single-node
@@ -32,7 +36,7 @@ services:
        - http.host=0.0.0.0
        - "ES_JAVA_OPTS=-Xms512m -Xmx512m -Djava.io.tmpdir=/usr/share/elasticsearch/tmp"
        - client.transport.sniff=false
-     build: ./elasticsearch
+     image: docker.elastic.co/elasticsearch/elasticsearch-oss:6.0.0
      mem_limit: 1024m
      ports:
        - "9300:9300"
