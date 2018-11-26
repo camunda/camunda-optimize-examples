@@ -35,7 +35,7 @@ those SSO plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Keycloak Example](sso-plugin/optimize-ss-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
+| [Keycloak Example](sso-plugin/optimize-sso-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
 
 
 
