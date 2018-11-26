@@ -25,10 +25,10 @@ demo:notdemo
 
 ## Download and Configure Optimize
 
-1. Download https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-standalone.zip to folder ./optimize/
+1. Download [Camunda Optimize](https://camunda.org/enterprise-release/optimize/2.3.0/camunda-optimize-2.3.0-standalone.zip) to folder `./optimize/`
 2. Rename to `camunda-optimize.zip`
 3. Place Optimize license in OptimizeLicense.txt
-3. Run `mvn package` in `./optimize/sso-keycloak-example-plugin`
+4. Run `mvn package` in `./optimize/sso-keycloak-example-plugin`
 
 ## Run docker-compose
 
@@ -41,6 +41,12 @@ demo:notdemo
 1. Open WebBrowser
 2. Open `localhost:8095`
 3. Login with: `demo:notdemo`
+
+# Some more background
+
+Keycloak is responsible for Authentication, so the users are stored in Keycloak and the Keycloak Proxy makes sure that only authenticated users can see Optimize.
+
+In the Optimize Plugin we only read the authenticated user from the request header. If the user is in the request, we authenticate the user directly in Optimize.
 
 # Show me some some code
 
