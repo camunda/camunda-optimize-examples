@@ -30,7 +30,7 @@ those variable plugins:
 
 ### Getting Started with SSO Plugins
 
-In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#single-sign-on). In the following you will find common use cases on why and how to use
+In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/plugins/single-sign-on/). In the following you will find common use cases on why and how to use
 those SSO plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
@@ -42,7 +42,7 @@ those SSO plugins:
 ### Contribute!
 
   * Website: http://www.camunda.org/
-  * Getting Started: https://docs.camunda.org/optimize/latest/technical-guide/installation/
+  * Getting Started: https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/
   * Issue Tracker: https://app.camunda.com/jira
   * Contribution Guidelines: http://www.camunda.org/community/contribute.html
   * License: Apache License, Version 2.0  http://www.apache.org/licenses/LICENSE-2.0
