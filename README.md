@@ -17,7 +17,7 @@ If you clone this repository, use the checkout commands to access the sources fo
 
 ### Getting Started with Variable Import Plugins
 
-In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/import/plugins/#variable-import-customization)
+In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/variable-import/)
 and adjust variable import. In the following you will find common use cases on why and how to use
 those variable plugins:
 
