@@ -35,8 +35,8 @@ Analogously to the variable import plugins, you can hook into the decision insta
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Filter out Input Instances](decision-import-plugin/filter-decision-inputs)                                 | 2.4.0+               | variable, plugin, import|
-| [Resolve Reference Outputs](decision-import-plugin/resolve-reference-outputs)                                    | 2.4.0+               | variable, plugin, import|
+| [Filter out Input Instances](decision-import-plugin/filter-decision-inputs)                                 | 2.4.0+               | decision, plugin, import|
+| [Resolve Reference Outputs](decision-import-plugin/resolve-reference-outputs)                                    | 2.4.0+               | decision, plugin, import|
 
 ### Getting Started with SSO Plugins
 
