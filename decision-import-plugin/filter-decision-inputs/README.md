@@ -95,7 +95,7 @@ Now run the following command to build the Jar containing the implemented plugin
 mvn clean install
 ```
 
-This creates a `filter-decision-inputs-1.0.0.jar` in `target` folder. Copy this
+This creates a `filter-decision-inputs-jar-with-dependencies.jar` in `target` folder. Copy this
 jar file into the `plugin` folder of your Optimize distribution.
 
 Finally it is necessary to tell Optimize in which package it should search for the plugin. You 
