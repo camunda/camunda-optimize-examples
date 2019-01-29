@@ -103,7 +103,7 @@ could do that if you add the following lines to `environment-config.yaml` in the
 `environment` folder of your Optimize distribution:
 ```yaml
 plugin:
-  decisionImport:
+  decisionInputImport:
     basePackages: ['org.camunda.optimize.examples']
 ```
 
