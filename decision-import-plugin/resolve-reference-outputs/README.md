@@ -191,7 +191,7 @@ When Optimize is now started, it should automatically resolve all your Pokémon 
 set the variables' values which contain the Pokémon names. All other output instances of simple types are still imported to 
 Optimize.
 
-[1]: docs/resolve-output-references.png
+[1]: docs/resolve-input-references.png
 [2]: src/main/java/org/camunda/optimize/examples/ResolveReferenceOutputs.java
 [3]: pom.xml
 [4]: https://xkcd.com/
