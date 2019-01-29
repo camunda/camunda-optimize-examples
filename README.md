@@ -13,6 +13,7 @@ If you clone this repository, use the checkout commands to access the sources fo
 ## Overview
 
 * [Getting Started with Variable Import Plugins](#getting-started-with-variable-import-plugins)
+* [Getting Started with Decision Import Plugins](#getting-started-with-decision-import-plugins)
 * [Getting Started with SSO Plugins](#getting-started-with-sso-plugins)
 
 ### Getting Started with Variable Import Plugins
@@ -27,6 +28,15 @@ those variable plugins:
 | [Filter out Variables](variable-import-plugin/filter-out-variables)                                    | 2.1.0+               | variable, plugin, import|
 | [Resolve reference variables](variable-import-plugin/resolve-reference-variables)                      | 2.1.0+               | variable, plugin, import|
 | [Transform complex variables](variable-import-plugin/transform-complex-variables)                      | 2.2.0+               | variable, plugin, import|
+
+### Getting Started with Decision Import Plugins
+
+Analogously to the variable import plugins, you can hook into the decision instandce import to enrich, filter or modify the input and output decision variables. [More information here.](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/)
+
+| Name                                                                                                   | Support from Version | Keywords                |
+| -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
+| [Filter out Input Instances](decision-import-plugin/filter-decision-inputs)                                 | 2.4.0+               | decision, plugin, import|
+| [Resolve Reference Outputs](decision-import-plugin/resolve-reference-outputs)                                    | 2.4.0+               | decision, plugin, import|
 
 ### Getting Started with SSO Plugins
 
