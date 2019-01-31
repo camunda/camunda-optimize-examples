@@ -31,7 +31,7 @@ those variable plugins:
 
 ### Getting Started with Decision Import Plugins
 
-Analogously to the variable import plugins, you can hook into the decision instandce import to enrich, filter or modify the input and output decision variables. [More information here.](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/)
+Analogously to the variable import plugins, you can hook into the decision instance import to enrich, filter or modify the input and output decision variables. [More information here.](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/)
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
