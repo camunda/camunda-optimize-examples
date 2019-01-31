@@ -119,7 +119,7 @@ of libraries that are already included in Optimize might cause weird side effect
 ### Implement the decision import plugin
 
 Let's say you have a situation where you need to use some of the Pokémon abilities.
-Depending on the ability, you need to decide which Pokémon needs to be summoned.
+Depending on the ability, a decision definition decides which Pokémon needs to be summoned.
 So, as a decision output you get an Pokémon ID, which is not really useful for the data analysis, as you want to see 
 the actual names of the summoned Pokémons. In this example we will resolve the Pokémon ID to it's name using the pokeapi.co.
 
