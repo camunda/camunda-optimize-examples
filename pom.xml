@@ -14,6 +14,8 @@
     <module>variable-import-plugin/anonymize-variables</module>
     <module>variable-import-plugin/resolve-reference-variables</module>
     <module>variable-import-plugin/transform-complex-variables</module>
+    <module>decision-import-plugin/resolve-reference-outputs</module>
+    <module>decision-import-plugin/filter-decision-inputs</module>
   </modules>
 
   <properties>
