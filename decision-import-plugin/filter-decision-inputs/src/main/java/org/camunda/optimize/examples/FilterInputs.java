@@ -24,8 +24,7 @@ public class FilterInputs implements DecisionInputImportAdapter {
         }
         return validAbilityId;
       })
-      .collect(
-        Collectors.toList());
+      .collect(Collectors.toList());
   }
 
   private boolean isValidAbilityId(PluginDecisionInputDto output) throws UnirestException {
