@@ -21,13 +21,14 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <optimize.version>2.4.0-SNAPSHOT</optimize.version>
   </properties>
 
   <dependencies>
     <dependency>
         <groupId>org.camunda.optimize</groupId>
         <artifactId>plugin</artifactId>
-        <version>2.2.0</version>
+        <version>${optimize.version}</version>
       </dependency>
   </dependencies>
 
