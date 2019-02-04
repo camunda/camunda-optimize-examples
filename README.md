@@ -4,9 +4,9 @@ Camunda Optimize examples
 A collection of usage examples for Camunda Optimize intended to get you started quickly (e.g. with the plugin system).
 
 
-| Camunda Version  | Link                                                                     | Checkout command      |
-| -----------------|--------------------------------------------------------------------------|-----------------------|
-| Latest           | [Master branch](https://github.com/camunda/camunda-optimize-examples)    | `git checkout master` |
+| Optimize Version | Link                                                                         | Checkout command      |
+| -----------------|------------------------------------------------------------------------------|-----------------------|
+| Latest           | [Master branch](https://github.com/camunda/camunda-optimize-examples)        | `git checkout master` |
 
 If you clone this repository, use the checkout commands to access the sources for the desired version.
 
