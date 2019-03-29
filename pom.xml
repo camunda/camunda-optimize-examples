@@ -21,7 +21,7 @@
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <optimize.version>2.4.0</optimize.version>
+    <optimize.version>2.5.0-SNAPSHOT</optimize.version>
   </properties>
 
   <dependencies>
