@@ -110,11 +110,16 @@ to Optimize as well:
   </build>
 ```
 
-Note: Some libraries are already used in Optimize and therefore provided out of the box.
-Instead of including those to an uber jar, just set the scope of those dependencies to
-`provided`. To get an overview, what is already provided by Optimize, have a look at
-the [third party libraries][5] in the Optimize documentation. Using your own version
-of libraries that are already included in Optimize might cause weird side effects otherwise.
+Note: Optimize isolates the loaded plugin libraries from the ones used in Optimize by default.
+This allows to use different library versions for the plugin to the ones used in Optimize.
+Therefore in this case it is recommended to create uber jars for Optimize plugins.
+
+In the case of when you want to use the provided Optimize dependencies instead it is possible to exclude them from
+the uber jar by setting the scope of those dependencies to `provided`.
+Then Optimize uses its already loaded third party library.
+This might have side-effects if the used version in the plugin is different to the one provided by Optimize.
+To get an overview, what is already provided by Optimize, have a look at
+the [third party libraries][5] in the Optimize documentation.
 
 ### Implement the decision import plugin
 
