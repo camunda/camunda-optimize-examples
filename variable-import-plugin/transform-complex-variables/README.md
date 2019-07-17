@@ -33,6 +33,14 @@ First, add the Optimize plugin dependency to your project using mavens [pom.xml]
 </dependency>
 ```
 
+Note:
+In this example we also use a third party library that is already provided by Optimize.
+Therefore we don't need to create a uber jar including this dependency and we can set its scope to `provided`
+This might have side-effects if the used version in the plugin is different to the one provided by Optimize.
+To get an overview of what is already provided by Optimize have a look at
+the [third party libraries][7] in the Optimize documentation.
+
+
 To tell maven where to find the plugin environment, add the following repository to your project:
 
 ```xml
@@ -192,3 +200,4 @@ to Optimize (if they are not complex or binary variables).
 [4]: pom.xml
 [5]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
 [6]: ../README.md
+[7]: https://docs.camunda.org/optimize/latest/technical-guide/third-party-libraries/dependencies/backend-dependencies/
