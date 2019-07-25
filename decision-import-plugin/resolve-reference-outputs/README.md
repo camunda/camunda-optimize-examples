@@ -112,20 +112,8 @@ Then you also need to create an uber jar, which can be done with the following:
     </plugins>
   </build>
 ```
-
-Note 1: Optimize will reject plugins that are built with a different Optimize version.
-(for example Optimize 2.6.0 can only run plugins built with version 2.6.0)
-To validate this version it is necessary to create a uber jar so that Optimize can access the plugin environment used by this plugin.
-
-Note 2: Optimize isolates the loaded plugin libraries from the ones used in Optimize by default.
-This allows to use different library versions for the plugin to the ones used in Optimize.
-
-In the case of when you want to use the provided Optimize dependencies instead it is possible to exclude them from
-the uber jar by setting the scope of those dependencies to `provided`.
-Then Optimize uses its already loaded third party library.
-This might have side-effects if the used version in the plugin is different to the one provided by Optimize.
-To get an overview, what is already provided by Optimize, have a look at
-the [third party libraries][5] in the Optimize documentation.
+Note: For further information why it is necessary to build the plugin as a uber jar you can have a look
+at [plugin setup][5] in the Optimize documentation.
 
 ### Implement the decision import plugin
 
@@ -206,4 +194,4 @@ Optimize.
 [2]: src/main/java/org/camunda/optimize/examples/ResolveReferenceOutputs.java
 [3]: pom.xml
 [4]: https://xkcd.com/
-[5]: https://docs.camunda.org/optimize/latest/technical-guide/third-party-libraries/dependencies/backend-dependencies/
+[5]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
