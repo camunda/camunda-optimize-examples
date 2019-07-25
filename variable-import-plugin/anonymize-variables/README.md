@@ -34,6 +34,10 @@ First, add the Optimize plugin dependency to your project using mavens [pom.xml]
   <version>${optimize.version}</version>
 </dependency>
 ```
+Note: It is important to use the same plugin version as the Optimize version you plan to use.
+Optimize rejects plugins that are built with different Optimize versions to avoid compatibility problems.
+This also means that to upgrade to newer Optimize versions it is necessary to build the plugin again with the new version.
+
 
 To tell maven where to find the plugin environment, add the following repository to your project:
 
@@ -48,6 +52,46 @@ To tell maven where to find the plugin environment, add the following repository
   </repository>
 </repositories>
 ```
+
+Then you also need to create an uber jar, which can be done with the following:
+```xml
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <finalName>${project.artifactId}</finalName>
+              <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+              </descriptorRefs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.2</version>
+        <executions>
+          <execution>
+            <id>default-jar</id>
+            <phase>none</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+```
+Note: For further information why it is necessary to build the plugin as a uber jar you can have a look
+at [plugin setup][6] in the Optimize documentation.
 
 ### Implement the variable plugin
 
@@ -128,3 +172,4 @@ binary variables).
 [3]: pom.xml
 [4]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
 [5]: ../README.md
+[6]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment

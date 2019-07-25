@@ -48,6 +48,11 @@ First, add the Optimize plugin dependency to your project using mavens [pom.xml]
 </dependency>
 ```
 
+Note: It is important to use the same plugin version as the Optimize version you plan to use.
+Optimize rejects plugins that are built with different Optimize versions to avoid compatibility problems.
+This also means that to upgrade to newer Optimize versions it is necessary to build the plugin again with the new version.
+
+
 To tell maven where to find the plugin environment, add the following repository to your project:
 
 ```xml
@@ -73,8 +78,7 @@ To package a third party library, add the library to the dependency:
 </dependencies>
 ```
 
-Then you also need to create an uber jar to include your third-party dependency 
-to Optimize as well:
+Then you also need to create an uber jar, which can be done with the following:
 ```xml
   <build>
     <defaultGoal>install</defaultGoal>
@@ -100,7 +104,7 @@ to Optimize as well:
       </plugin>
       <plugin>
         <artifactId>maven-jar-plugin</artifactId>
-        <version>3.0.2</version>
+        <version>3.1.2</version>
         <executions>
           <execution>
             <id>default-jar</id>
@@ -111,17 +115,8 @@ to Optimize as well:
     </plugins>
   </build>
 ```
-
-Note: Optimize isolates the loaded plugin libraries from the ones used in Optimize by default.
-This allows to use different library versions for the plugin to the ones used in Optimize.
-Therefore in this case it is recommended to create uber jars for Optimize plugins.
-
-In the case of when you want to use the provided Optimize dependencies instead it is possible to exclude them from
-the uber jar by setting the scope of those dependencies to `provided`.
-Then Optimize uses its already loaded third party library.
-This might have side-effects if the used version in the plugin is different to the one provided by Optimize.
-To get an overview, what is already provided by Optimize, have a look at
-the [third party libraries][5] in the Optimize documentation.
+Note: For further information why it is necessary to build the plugin as a uber jar you can have a look
+at [plugin setup][5] in the Optimize documentation.
 
 ### Implement the variable plugin
 
@@ -227,4 +222,4 @@ Optimize (if they are not complex or binary variables).
 [2]: src/main/java/org/camunda/optimize/examples/ResolveReferenceVariables.java
 [3]: pom.xml
 [4]: https://xkcd.com/
-[5]: https://docs.camunda.org/optimize/latest/technical-guide/third-party-libraries/dependencies/backend-dependencies/
+[5]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment

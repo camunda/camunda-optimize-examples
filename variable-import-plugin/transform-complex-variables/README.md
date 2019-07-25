@@ -33,12 +33,6 @@ First, add the Optimize plugin dependency to your project using mavens [pom.xml]
 </dependency>
 ```
 
-Note:
-In this example we also use a third party library that is already provided by Optimize.
-Therefore we don't need to create a uber jar including this dependency and we can set its scope to `provided`
-This might have side-effects if the used version in the plugin is different to the one provided by Optimize.
-To get an overview of what is already provided by Optimize have a look at
-the [third party libraries][7] in the Optimize documentation.
 
 
 To tell maven where to find the plugin environment, add the following repository to your project:
@@ -54,6 +48,47 @@ To tell maven where to find the plugin environment, add the following repository
   </repository>
 </repositories>
 ```
+
+Then you also need to create an uber jar, which can be done with the following:
+```xml
+  <build>
+    <defaultGoal>install</defaultGoal>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <finalName>${project.artifactId}</finalName>
+              <descriptorRefs>
+                <descriptorRef>jar-with-dependencies</descriptorRef>
+              </descriptorRefs>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      <plugin>
+        <artifactId>maven-jar-plugin</artifactId>
+        <version>3.1.2</version>
+        <executions>
+          <execution>
+            <id>default-jar</id>
+            <phase>none</phase>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+```
+Note: For further information why it is necessary to build the plugin as a uber jar you can have a look
+at [plugin setup][7] in the Optimize documentation.
+
 
 ### Implement the variable plugin
 
@@ -200,4 +235,4 @@ to Optimize (if they are not complex or binary variables).
 [4]: pom.xml
 [5]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
 [6]: ../README.md
-[7]: https://docs.camunda.org/optimize/latest/technical-guide/third-party-libraries/dependencies/backend-dependencies/
+[7]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
