@@ -11,7 +11,7 @@ have a look at the following diagram:
 
 Using the engine REST-API Optimize fetches all variable, but the variables 
 that contain binary data (e.g. pdfs) from the engine. This also includes complex 
-variables like JSON, XML oder Java object variables. Then those variables are 
+variables like JSON, XML or Java object variables. Then those variables are 
 passed through all variable plugins that are configured in Optimize. All variables 
 that are still available after the plugins are filtered again such that Optimize
 only imports primitive typed variables. Finally, the primitive variables are 
