@@ -1,0 +1,32 @@
+spring:
+  main:
+    web-application-type: NONE
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: flowing-retail
+          content-type: application/json
+          group: camunda-optimize
+          consumer:
+            batch-mode: true
+      kafka:
+        binder:
+          zkNodes: localhost:2181
+          brokers: localhost:9092
+          consumerProperties:
+            max.poll.records: 1000
+            fetch.max.wait.ms: 250
+            value.deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+            spring.json.value.default.type: org.camunda.optimize.examples.event.kafka.MessageDto
+
+camunda:
+  optimize:
+    ingestion:
+      endpoint: http://localhost:8090/api/ingestion/event/batch
+      accessToken: mytoken
+
+
+logging:
+  level:
+    org.camunda: DEBUG

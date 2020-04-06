@@ -17,6 +17,7 @@
     <module>decision-import-plugin/resolve-reference-outputs</module>
     <module>decision-import-plugin/filter-decision-inputs</module>
     <module>sso-plugin/optimize-sso-keycloak/optimize/sso-keycloak-example-plugin</module>
+    <module>kafka-event-adapter</module>
   </modules>
 
   <properties>
