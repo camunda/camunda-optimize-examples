@@ -54,6 +54,15 @@ those SSO plugins:
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
 | [Keycloak Example](sso-plugin/optimize-sso-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
 
+### Getting Started with Business Key Import Plugins
+
+You can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/businesskey-import/)
+and adjust business keys during the process instance import. In the following you can find a common use case on why and how to use
+this business key plugin:
+
+| Name                                                                                                   | Support from Version | Keywords                |
+| -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
+| [Anonymize Business Keys](businesskey-import-plugin/anonymize-businesskeys)                             | 3.1.0+               | businesskey, plugin, import|
 
 
 ### Contribute!
