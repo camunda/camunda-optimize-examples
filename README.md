@@ -21,6 +21,7 @@ If you clone this repository, use the checkout commands to access the sources fo
 
 * [Getting Started with Variable Import Plugins](#getting-started-with-variable-import-plugins)
 * [Getting Started with Decision Import Plugins](#getting-started-with-decision-import-plugins)
+* [Getting Started with Business Key Import Plugins](#getting-started-with-business-key-import-plugins)
 * [Getting Started with SSO Plugins](#getting-started-with-sso-plugins)
 
 ### Getting Started with Variable Import Plugins
@@ -45,6 +46,17 @@ Analogously to the variable import plugins, you can hook into the decision insta
 | [Filter out Input Instances](decision-import-plugin/filter-decision-inputs)                                 | 2.4.0+               | decision, plugin, import|
 | [Resolve Reference Outputs](decision-import-plugin/resolve-reference-outputs)                                    | 2.4.0+               | decision, plugin, import|
 
+### Getting Started with Business Key Import Plugins
+
+You can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/businesskey-import/)
+and adjust business keys during the process instance import. In the following you can find a common use case on why and how to use
+this business key plugin:
+
+| Name                                                                                                   | Support from Version | Keywords                |
+| -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
+| [Anonymize Business Keys](businesskey-import-plugin/anonymize-businesskeys)                             | 3.1.0+               | businesskey, plugin, import|
+
+
 ### Getting Started with SSO Plugins
 
 In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/plugins/single-sign-on/). In the following you will find common use cases on why and how to use
@@ -53,7 +65,6 @@ those SSO plugins:
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
 | [Keycloak Example](sso-plugin/optimize-sso-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
-
 
 
 ### Contribute!
