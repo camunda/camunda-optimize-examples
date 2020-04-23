@@ -7,6 +7,6 @@ public class AnonymizeBusinessKeysByHashingAdapter implements BusinessKeyImportA
   public String adaptBusinessKey(String businessKey) {
     // This is a simple example of converting a businesskey to a hash,
     // it is recommended to use more secure hashing algorithms in practice
-    return String.valueOf(businessKey.hashCode());
+    return businessKey != null ? String.valueOf(businessKey.hashCode()) : null;
   }
 }
