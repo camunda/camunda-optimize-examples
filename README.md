@@ -34,10 +34,10 @@ those variable plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Anonymize your Variables](variable-import-plugin/anonymize-variables)                                 | 2.1.0+               | variable, plugin, import|
-| [Filter out Variables](variable-import-plugin/filter-out-variables)                                    | 2.1.0+               | variable, plugin, import|
-| [Resolve reference variables](variable-import-plugin/resolve-reference-variables)                      | 2.1.0+               | variable, plugin, import|
-| [Transform complex variables](variable-import-plugin/transform-complex-variables)                      | 2.2.0+               | variable, plugin, import|
+| [Anonymize your Variables](plugins/variable-import-plugins/anonymize-variables)                                 | 2.1.0+               | variable, plugin, import|
+| [Filter out Variables](plugins/variable-import-plugins/filter-out-variables)                                    | 2.1.0+               | variable, plugin, import|
+| [Resolve reference variables](plugins/variable-import-plugins/resolve-reference-variables)                      | 2.1.0+               | variable, plugin, import|
+| [Transform complex variables](plugins/variable-import-plugins/transform-complex-variables)                      | 2.2.0+               | variable, plugin, import|
 
 ### Getting Started with Decision Import Plugins
 
@@ -45,8 +45,8 @@ Analogously to the variable import plugins, you can hook into the decision insta
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Filter out Input Instances](decision-import-plugin/filter-decision-inputs)                                 | 2.4.0+               | decision, plugin, import|
-| [Resolve Reference Outputs](decision-import-plugin/resolve-reference-outputs)                                    | 2.4.0+               | decision, plugin, import|
+| [Filter out Input Instances](plugins/decision-import-plugins/filter-decision-inputs)                                 | 2.4.0+               | decision, plugin, import|
+| [Resolve Reference Outputs](plugins/decision-import-plugins/resolve-reference-outputs)                                    | 2.4.0+               | decision, plugin, import|
 
 ### Getting Started with Business Key Import Plugins
 
@@ -56,7 +56,7 @@ this business key plugin:
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Anonymize Business Keys](businesskey-import-plugin/anonymize-businesskeys)                             | 3.1.0+               | businesskey, plugin, import|
+| [Anonymize Business Keys](plugins/businesskey-import-plugin)                             | 3.1.0+               | businesskey, plugin, import|
 
 
 ### Getting Started with SSO Plugins
@@ -66,7 +66,7 @@ those SSO plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
-| [Keycloak Example](sso-plugin/optimize-sso-keycloak)                                 | 2.3.0+               | sso, plugin, keycloak|
+| [Keycloak Example](optimize-sso-keycloak-example)                                 | 2.3.0+               | sso, plugin, keycloak|
 
 
 ### Contribute!

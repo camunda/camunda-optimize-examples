@@ -10,29 +10,22 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>variable-import-plugin/filter-out-variables</module>
-    <module>variable-import-plugin/anonymize-variables</module>
-    <module>variable-import-plugin/resolve-reference-variables</module>
-    <module>variable-import-plugin/transform-complex-variables</module>
-    <module>decision-import-plugin/resolve-reference-outputs</module>
-    <module>decision-import-plugin/filter-decision-inputs</module>
-    <module>sso-plugin/optimize-sso-keycloak/optimize/sso-keycloak-example-plugin</module>
+    <module>plugins</module>
     <module>kafka-event-adapter</module>
-    <module>businesskey-import-plugin</module>
   </modules>
 
   <properties>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-    <optimize.version>3.3.0-SNAPSHOT</optimize.version>
+    <optimize.version>${project.version}</optimize.version>
   </properties>
 
-  <dependencies>
-    <dependency>
-      <groupId>org.camunda.optimize</groupId>
-      <artifactId>plugin</artifactId>
-      <version>3.3.0-SNAPSHOT</version>
-    </dependency>
-  </dependencies>
+  <repositories>
+    <repository>
+      <id>camunda-nexus</id>
+      <name>camunda-nexus</name>
+      <url>https://app.camunda.com/nexus/content/repositories/camunda-optimize</url>
+    </repository>
+  </repositories>
 
 </project>
