@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
   optimize:
-    image: registry.camunda.cloud/optimize-ee/optimize:3.2.0
+    image: registry.camunda.cloud/optimize-ee/optimize:latest
     container_name: optimize
     environment:
       - JAVA_OPTS=-Xms1g -Xmx1g -XX:MaxMetaspaceSize=256m
@@ -19,7 +19,7 @@ services:
     restart: always
     mem_limit: 2g
   elasticsearch:
-    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.8.0
+    image: docker.elastic.co/elasticsearch/elasticsearch-oss:7.10.0
     container_name: elasticsearch
     environment:
       - cluster.name=elasticsearch
