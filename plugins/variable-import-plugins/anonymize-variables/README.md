@@ -19,13 +19,13 @@ data and still analyze the process.
 
 ### How does it work?
 
-To see how the import in Optimize works in general, have a look at the [documentation][4]. 
+To see how the import in Optimize works in general, have a look at the [documentation][3]. 
 The details of the variable import and how the plugin hooks into that 
-are explained in the [variable import plugin readme][5].
+are explained in the [variable import plugin readme][4].
 
 ### Setup your environment
 
-First, add the Optimize plugin dependency to your project using mavens [pom.xml][3]:
+First, add the Optimize plugin dependency to your project using mavens [pom.xml][2]:
 
 ```xml
 <dependency>
@@ -91,14 +91,14 @@ Then you also need to create an uber jar, which can be done with the following:
   </build>
 ```
 Note: For further information why it is necessary to build the plugin as a uber jar you can have a look
-at [plugin setup][6] in the Optimize documentation.
+at [plugin setup][5] in the Optimize documentation.
 
 ### Implement the variable plugin
 
 Now with the Optimize dependency added, the minimum requirements are set to
 implement your own plugin. For that extend the 
 `org.camunda.optimize.plugin.importing.variable.VariableImportAdapter` interface. In 
-the given [example][2]:
+the given [example][1]:
 
 ```java
 package org.camunda.optimize.examples;
@@ -167,9 +167,8 @@ When Optimize is now started, it should automatically anonymize variables with
 the name `customerName`. All other variables are still imported to Optimize (if they are not complex or 
 binary variables).
 
-[1]: ../docs/optimize-variable-import.png
-[2]: src/main/java/org/camunda/optimize/examples/AnonymizeSensitiveVariables.java
-[3]: pom.xml
-[4]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
-[5]: ../README.md
-[6]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
+[1]: src/main/java/org/camunda/optimize/examples/AnonymizeSensitiveVariables.java
+[2]: pom.xml
+[3]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
+[4]: ../README.md
+[5]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment

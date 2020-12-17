@@ -39,9 +39,7 @@ Put your Optimize license into `./optimize-config/OptimizeLicense.txt`
 
 ## Open Optimize
 
-1. Open WebBrowser
-2. Open `http://localhost:8095`
-3. Login with: `demo:notdemo`
+Open `http://localhost:8095` in a web browser and log in with `demo:notdemo`
 
 # Some more background
 
