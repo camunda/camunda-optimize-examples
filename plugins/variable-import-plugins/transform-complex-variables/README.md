@@ -33,8 +33,6 @@ First, add the Optimize plugin dependency to your project using mavens [pom.xml]
 </dependency>
 ```
 
-
-
 To tell maven where to find the plugin environment, add the following repository to your project:
 
 ```xml
@@ -86,20 +84,17 @@ Then you also need to create an uber jar, which can be done with the following:
     </plugins>
   </build>
 ```
-Note: For further information why it is necessary to build the plugin as a uber jar you can have a look
+Note: For further information why it is necessary to build the plugin as an uber jar you can have a look
 at [plugin setup][7] in the Optimize documentation.
-
 
 ### Implement the variable plugin
 
 In this example we assume that you have a business process where you interact with
-customers, e.g. handling customer support. Each customer is stored as a JSON variable 
-during the process execution. Now you want to analyze how much time you need for the 
-support for certain customer and how you can improve the performance of the 
-customer support process, which Optimize would be the perfect tool for. Since the 
-customer data is stored in a complex JSON variable, Optimize is not able to analyze
-it out of the box. However, we can use the Optimize plugin system to hook into the
-import and transform each complex customer variable to a set of primitive variables.
+customers, e.g. handling customer support.  Each customer is stored as a JSON variable during the process execution.
+Optimize would be the perfect tool for analyzing how much time is needed to support a certain customer.
+But since the customer data is stored in a complex JSON variable, Optimize is not able to analyze it out of the box.
+However, we can use the Optimize plugin system to hook into the import and transform each complex customer variable 
+to a set of primitive variables.
 
 For that extend the 
 `org.camunda.optimize.plugin.importing.variable.VariableImportAdapter` interface. In 
