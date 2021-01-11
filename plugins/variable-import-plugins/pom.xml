@@ -15,6 +15,7 @@
 
   <modules>
     <module>anonymize-variables</module>
+    <module>generic-complex-variable-flattener</module>
     <module>filter-out-variables</module>
     <module>resolve-reference-variables</module>
     <module>transform-complex-variables</module>
