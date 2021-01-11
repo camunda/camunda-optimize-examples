@@ -27,8 +27,6 @@ What is the idea/use case of this example:
   ```
   and want to analyse these variable in Optimize as `user.firstName` & `user.lastName`.
 
-
-
 ### How does it work?
 
 To see how the import in Optimize works in general, have a look at the [documentation][2].
@@ -198,7 +196,7 @@ jar file into the `plugin` folder of your Optimize distribution.
 
 Finally it is necessary to tell Optimize in which package it should search for the plugin. You
 could do that if you add the following lines to `environment-config.yaml` in the
-`environment` folder of your Optimize distribution:
+`config` folder of your Optimize distribution:
 
 ```yaml
 plugin:
