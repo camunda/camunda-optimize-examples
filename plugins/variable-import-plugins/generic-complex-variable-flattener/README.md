@@ -207,6 +207,6 @@ plugin:
 The package path must match the one that is written in the implemented java class of the plugin.
 
 [1]: src/main/java/de/janhuddel/bpm/optimize/plugin/ComplexVariableFlattener.java
-[2]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
+[2]: https://docs.camunda.org/optimize/latest/technical-guide/optimize-explained/import/import-overview/
 [3]: ../README.md
 [4]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment

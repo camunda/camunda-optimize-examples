@@ -168,7 +168,7 @@ All other entries are still imported to Optimize.
 
 [2]: src/main/java/org/camunda/optimize/examples/FilterInputs.java
 [3]: pom.xml
-[4]: https://docs.camunda.org/optimize/latest/technical-guide/import/import-overview/
+[4]: https://docs.camunda.org/optimize/latest/technical-guide/optimize-explained/import/import-overview/
 [5]: ../README.md
 [6]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
 
