@@ -130,7 +130,7 @@ the title of comic using the XKCD Rest-API. In this case the XKCD database would
 be the variable store that you tap to retrieve the missing information.
 
 Now the only thing to do is to implement your own Optimize plugin and fetch the
-comic title for each variable that contains a comic id. For that extend the 
+comic title for each variable that contains a comic id. To do this, you need to extend the 
 `org.camunda.optimize.plugin.importing.variable.VariableImportAdapter` interface. In 
 the given [example][2]:
 

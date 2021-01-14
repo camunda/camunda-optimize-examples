@@ -95,7 +95,7 @@ at [plugin setup][6] in the Optimize documentation.
 ### Implement the variable plugin
 
 Now with the Optimize dependency added, the minimum requirements are set to
-implement your own plugin. For that extend the 
+implement your own plugin. To do this, you need to extend the 
 `org.camunda.optimize.plugin.importing.variable.VariableImportAdapter` interface. In 
 the given [example][2]:
 

@@ -96,7 +96,7 @@ But since the customer data is stored in a complex JSON variable, Optimize is no
 However, we can use the Optimize plugin system to hook into the import and transform each complex customer variable 
 to a set of primitive variables.
 
-For that extend the 
+To do this, you need to extend the 
 `org.camunda.optimize.plugin.importing.variable.VariableImportAdapter` interface. In 
 the given [example][2]:
 
