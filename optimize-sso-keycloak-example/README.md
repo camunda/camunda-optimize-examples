@@ -9,7 +9,7 @@ To find out more about the Optimize SSO Plugin mechanism, find the docs [here](h
 It includes a docker-compose with:
 1. Camunda Optimize
 2. ElasticSearch
-3. Camunda BPM
+3. Camunda Platform
 2. Keycloak Authentication Server
 3. Keycloak Proxy Server
 
