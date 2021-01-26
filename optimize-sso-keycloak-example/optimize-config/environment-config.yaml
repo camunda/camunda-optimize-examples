@@ -1,4 +1,4 @@
 ---
 plugin:
   authenticationExtractor:
-    basePackages: ['org.camunda.optimize.plugin.sso']
+    basePackages: ['org.camunda.optimize.examples']
