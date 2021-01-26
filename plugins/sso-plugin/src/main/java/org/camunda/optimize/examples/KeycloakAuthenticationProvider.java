@@ -1,4 +1,4 @@
-package org.camunda.optimize.plugin.sso;
+package org.camunda.optimize.examples;
 
 import org.camunda.optimize.plugin.security.authentication.AuthenticationExtractor;
 import org.camunda.optimize.plugin.security.authentication.AuthenticationResult;
