@@ -25,7 +25,7 @@ services:
       - OPTIMIZE_CAMUNDABPM_REST_URL=http://cambpm:8080/engine-rest
       - OPTIMIZE_ELASTICSEARCH_HOST=elasticsearch
     volumes:
-      - ./optimize-config/environment-config.yaml:/optimize/environment/environment-config.yaml
+      - ./optimize-config/environment-config.yaml:/optimize/config/environment-config.yaml
       - ./optimize-config/OptimizeLicense.txt:/optimize/environment/OptimizeLicense.txt
       - ../plugins/sso-plugin/target/sso-plugin-jar-with-dependencies.jar:/optimize/plugin/sso.jar
     restart: always
