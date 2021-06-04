@@ -27,6 +27,7 @@ If you clone this repository, use the checkout commands to access the sources fo
 * [Getting Started with Decision Import Plugins](#getting-started-with-decision-import-plugins)
 * [Getting Started with Business Key Import Plugins](#getting-started-with-business-key-import-plugins)
 * [Getting Started with SSO Plugins](#getting-started-with-sso-plugins)
+* [Getting Started with Elasticsearch Header Plugins](#getting-started-with-elasticsearch-header-plugins)
 
 ### Getting Started with Variable Import Plugins
 
@@ -69,6 +70,15 @@ those SSO plugins:
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
 | [Keycloak Example](optimize-sso-keycloak-example)                                 | 2.3.0+               | sso, plugin, keycloak|
+
+### Getting Started with Elasticsearch Header Plugins
+
+In Optimize you can [hook into Optimize Elasticsearch Requests](https://docs.camunda.org/optimize/latest/technical-guide/plugins/elasticsearch-header/). In the following you will find common use cases on why and how to use
+this Elasticsearch Header plugin plugins:
+
+| Name                                                                                                   | Support from Version | Keywords                |
+| -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
+| [Authorization Header Example](plugins/elasticsearch-header-plugin)                                 | 3.5.0+               | elasticsearch, plugin, token, header|
 
 
 ### Contribute!
