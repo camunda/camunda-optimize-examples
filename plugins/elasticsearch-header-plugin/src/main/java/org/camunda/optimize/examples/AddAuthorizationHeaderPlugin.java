@@ -11,7 +11,7 @@ public class AddAuthorizationHeaderPlugin implements ElasticsearchCustomHeaderSu
   private String currentToken;
 
   public CustomHeader getElasticsearchCustomHeader() {
-    if (currentToken == null || currentTokenExpiresWithinFifteenMinutes()) {
+    if (currentToken == null || isTokenExpired()) {
       currentToken = fetchNewToken();
     }
     return new CustomHeader("Authorization", currentToken);
@@ -21,7 +21,7 @@ public class AddAuthorizationHeaderPlugin implements ElasticsearchCustomHeaderSu
     return UUID.randomUUID().toString();
   }
 
-  private boolean currentTokenExpiresWithinFifteenMinutes() {
+  private boolean isTokenExpired() {
     return RandomUtils.nextBoolean();
   }
 
