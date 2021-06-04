@@ -18,6 +18,7 @@
     <module>decision-import-plugins</module>
     <module>sso-plugin</module>
     <module>variable-import-plugins</module>
+    <module>elasticsearch-header-plugin</module>
   </modules>
 
 </project>
