@@ -1,0 +1,27 @@
+{
+  "realm" : "master",
+  "users" : [ {
+    "id" : "demo",
+    "createdTimestamp" : 1591297959169,
+    "username" : "demo",
+    "email" : "demo@camunda.com",
+    "enabled" : true,
+    "totp" : false,
+    "emailVerified" : true,
+    "credentials" : [ {
+      "id" : "a1a06ecd-fdc0-4e67-92cd-2da22d724e32",
+      "type" : "password",
+      "createdDate" : 1591297959315,
+      "secretData" : "{\"value\":\"6rt5zuqHVHopvd0FTFE0CYadXTtzY0mDY2BrqnNQGS51/7DfMJeGgj0roNnGMGvDv30imErNmiSOYl+cL9jiIA==\",\"salt\":\"LI0kqr09JB7J9wvr2Hxzzg==\"}",
+      "credentialData" : "{\"hashIterations\":27500,\"algorithm\":\"pbkdf2-sha256\"}"
+    } ],
+    "disableableCredentialTypes" : [ ],
+    "requiredActions" : [ ],
+    "realmRoles" : [ "offline_access", "admin", "uma_authorization" ],
+    "clientRoles" : {
+      "account" : [ "view-profile", "manage-account" ]
+    },
+    "notBefore" : 0,
+    "groups" : [ ]
+  } ]
+}

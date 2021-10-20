@@ -13,7 +13,7 @@ public class KeycloakAuthenticationProvider implements AuthenticationExtractor {
 
   public AuthenticationResult extractAuthenticatedUser(HttpServletRequest request) {
     AuthenticationResult result = new AuthenticationResult();
-    String user = request.getHeader("KEYCLOAK_USERNAME");
+    String user = request.getHeader("X-Forwarded-User");
 
     if (user == null || user.isEmpty()) {
       logger.info("Did not find user.");
