@@ -16,7 +16,7 @@ It includes a docker-compose with:
 The Keycloak Server has one user:
 
 ```
-demo:notdemo
+demo:password
 ```
 
 # How to run?
@@ -33,13 +33,12 @@ Put your Optimize license into `./optimize-config/OptimizeLicense.txt`
 
 ## Run docker-compose
 
-1. Build all images with `docker-compose build`
-2. Login to private Camunda Docker EE Registry with `docker login registry.camunda.cloud` Use your EE LDAP credentials to log in.
-3. Start all images `docker-compose up -d`
+1. Login to private Camunda Docker EE Registry with `docker login registry.camunda.cloud`, use your EE LDAP credentials to log in.
+2. Start all images along with providing the Optimize version you want to run `OPTIMIZE_VERSION=3.6.0 docker-compose up -d`
 
 ## Open Optimize
 
-Open `http://localhost:8095` in a web browser and log in with `demo:notdemo`
+Open `http://sso-proxy.localtest.me/` in a web browser and log in with `demo:password`
 
 # Some more background
 
