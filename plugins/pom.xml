@@ -19,6 +19,7 @@
     <module>sso-plugin</module>
     <module>variable-import-plugins</module>
     <module>elasticsearch-header-plugin</module>
+    <module>plugin-with-config</module>
   </modules>
 
 </project>
