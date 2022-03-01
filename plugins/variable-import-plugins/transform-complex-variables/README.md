@@ -41,7 +41,7 @@ To tell maven where to find the plugin environment, add the following repository
     <id>camunda-bpm-nexus</id>
     <name>camunda-bpm-nexus</name>
     <url>
-      https://app.camunda.com/nexus/content/repositories/camunda-optimize
+      https://artifacts.camunda.com/artifactory/camunda-optimize/
     </url>
   </repository>
 </repositories>
