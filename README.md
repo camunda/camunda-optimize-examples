@@ -7,6 +7,7 @@ A collection of usage examples for Camunda Optimize intended to get you started 
 | Optimize Version | Link                                                                         | Checkout command      |
 | -----------------|------------------------------------------------------------------------------|-----------------------|
 | Latest           | [Master branch](https://github.com/camunda/camunda-optimize-examples)        | `git checkout master` |
+| 3.8.0              | [3.8.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.8.0)   | `git checkout 3.8.0`  |
 | 3.7.0              | [3.7.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.7.0)   | `git checkout 3.7.0`  |
 | 3.6.0              | [3.6.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.6.0)   | `git checkout 3.6.0`  |
 | 3.5.0            | [3.5.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.5.0) | `git checkout 3.5.0`  |
