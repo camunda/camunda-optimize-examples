@@ -1,6 +1,6 @@
 # Optimize variable plugin
 
-In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/variable-import/) 
+In Optimize you can [hook into the Optimize import](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/variable-import-plugin/) 
 and adjust variable imports. In this directory you will find common use cases on why and how to use
 those variable plugins.
 

@@ -1,6 +1,6 @@
 # Optimize businesskey plugin
 
-In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/businesskey-import/) 
+In Optimize you can [hook into the Optimize import](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/businesskey-import-plugin/) 
 and adjust business keys during process instance imports. In this directory you will find a use case example for this plugin.
 
 To give you a better understanding of how process instances are imported in Optimize, 

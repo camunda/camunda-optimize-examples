@@ -228,6 +228,6 @@ to Optimize (if they are not complex or binary variables).
 [2]: src/main/java/org/camunda/optimize/examples/TransformComplexVariables.java
 [3]: src/main/java/org/camunda/optimize/examples/Customer.java
 [4]: pom.xml
-[5]: https://docs.camunda.org/optimize/latest/technical-guide/optimize-explained/import/import-overview/
+[5]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/
 [6]: ../README.md
-[7]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
+[7]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/#setup-your-environment

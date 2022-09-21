@@ -169,6 +169,6 @@ binary variables).
 
 [1]: src/main/java/org/camunda/optimize/examples/AnonymizeSensitiveVariables.java
 [2]: pom.xml
-[3]: https://docs.camunda.org/optimize/latest/technical-guide/optimize-explained/import/import-overview/
+[3]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/
 [4]: ../README.md
-[5]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
+[5]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/#setup-your-environment

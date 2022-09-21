@@ -1,6 +1,6 @@
 # Optimize decision import plugin
 
-In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/) 
+In Optimize you can [hook into the Optimize import](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/decision-import-plugin/) 
 and adjust the decision instance import. In this directory you will find example implementations of decision import plugins.
 
 To give you a better understanding of how variables are imported in Optimize, 
