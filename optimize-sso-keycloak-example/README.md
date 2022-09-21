@@ -4,7 +4,7 @@ This example demonstrates how you can set up SSO with Optimize and Keycloak.
 
 The most important part from the Optimize perspective of this example is the custom Optimize SSO Plugin
 [sso-plugin](../plugins/sso-plugin)
-To find out more about the Optimize SSO Plugin mechanism, find the docs [here](https://docs.camunda.org/optimize/latest/technical-guide/plugins/single-sign-on/)
+To find out more about the Optimize SSO Plugin mechanism, find the docs [here](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/single-sign-on/)
 
 It includes a docker-compose with:
 1. Camunda Optimize

@@ -142,7 +142,7 @@ Once the process has been published, you can create a new report and use the pro
 In the subfolder `SampleUiPathProject` you can find a complete UiPath project that was created following this guide.
 
 [1]: ./docs/component_overview.png
-[2]: https://docs.camunda.org/optimize/latest/technical-guide/setup/event-based-processes/#event-based-process-configuration
+[2]: https://docs.camunda.io/docs/self-managed/optimize-deployment/configuration/setup-event-based-processes/#event-based-process-configuration
 [3]: https://docs.uipath.com/installation-and-upgrade/docs/studio-install-studio
 [4]: ./docs/uipath-new-project.png
 [5]: ./docs/uipath-manage-packages.png

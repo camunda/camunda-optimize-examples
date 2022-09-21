@@ -35,7 +35,7 @@ If you clone this repository, use the checkout commands to access the sources fo
 
 ### Getting Started with Variable Import Plugins
 
-In Optimize you can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/variable-import/)
+In Optimize you can [hook into the Optimize import](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/variable-import-plugin/)
 and adjust variable import. In the following you will find common use cases on why and how to use
 those variable plugins:
 
@@ -48,7 +48,7 @@ those variable plugins:
 
 ### Getting Started with Decision Import Plugins
 
-Analogously to the variable import plugins, you can hook into the decision instance import to enrich, filter or modify the input and output decision variables. [More information here.](https://docs.camunda.org/optimize/latest/technical-guide/plugins/decision-import/)
+Analogously to the variable import plugins, you can hook into the decision instance import to enrich, filter or modify the input and output decision variables. [More information here.](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/decision-import-plugin/)
 
 | Name                                                                                                   | Support from Version | Keywords                |
 | -------------------------------------------------------------------------------------------------------|----------------------|-------------------------|
@@ -57,7 +57,7 @@ Analogously to the variable import plugins, you can hook into the decision insta
 
 ### Getting Started with Business Key Import Plugins
 
-You can [hook into the Optimize import](https://docs.camunda.org/optimize/latest/technical-guide/plugins/businesskey-import/)
+You can [hook into the Optimize import](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/businesskey-import-plugin/)
 and adjust business keys during the process instance import. In the following you can find a common use case on why and how to use
 this business key plugin:
 
@@ -68,7 +68,7 @@ this business key plugin:
 
 ### Getting Started with SSO Plugins
 
-In Optimize you can [hook into the Optimize authentication](https://docs.camunda.org/optimize/latest/technical-guide/plugins/single-sign-on/). In the following you will find common use cases on why and how to use
+In Optimize you can [hook into the Optimize authentication](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/single-sign-on/). In the following you will find common use cases on why and how to use
 those SSO plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
@@ -77,7 +77,7 @@ those SSO plugins:
 
 ### Getting Started with Elasticsearch Header Plugins
 
-In Optimize you can [hook into Optimize Elasticsearch Requests](https://docs.camunda.org/optimize/latest/technical-guide/plugins/elasticsearch-header/). In the following you will find common use cases on why and how to use
+In Optimize you can [hook into Optimize Elasticsearch Requests](https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/elasticsearch-header/). In the following you will find common use cases on why and how to use
 this Elasticsearch Header plugin plugins:
 
 | Name                                                                                                   | Support from Version | Keywords                |
@@ -88,7 +88,7 @@ this Elasticsearch Header plugin plugins:
 ### Contribute!
 
   * Website: http://www.camunda.org/
-  * Getting Started: https://docs.camunda.org/optimize/latest/technical-guide/setup/installation/
+  * Getting Started: https://docs.camunda.io/docs/self-managed/optimize-deployment/install-and-start/
   * Issue Tracker: https://app.camunda.com/jira
   * Contribution Guidelines: http://www.camunda.org/community/contribute.html
   * License: Apache License, Version 2.0  http://www.apache.org/licenses/LICENSE-2.0

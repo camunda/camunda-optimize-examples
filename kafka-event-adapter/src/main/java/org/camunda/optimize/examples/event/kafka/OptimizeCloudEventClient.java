@@ -53,7 +53,7 @@ public class OptimizeCloudEventClient {
     log.debug("Try to ingest {} events into Optimize", cloudEvents.size());
 
     // Use Optimize Event Ingestion API
-    // see https://docs.camunda.org/optimize/latest/technical-guide/event-ingestion-rest-api/
+    // see https://docs.camunda.io/docs/apis-clients/optimize-api/event-ingestion/
     final HttpHeaders headers = new HttpHeaders();
     headers.setContentType(MediaType.APPLICATION_JSON);
     headers.set(HttpHeaders.AUTHORIZATION, optimizeIngestionAccessToken);

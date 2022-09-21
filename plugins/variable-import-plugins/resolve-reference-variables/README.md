@@ -222,4 +222,4 @@ Optimize (if they are not complex or binary variables).
 [2]: src/main/java/org/camunda/optimize/examples/ResolveReferenceVariables.java
 [3]: pom.xml
 [4]: https://xkcd.com/
-[5]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
+[5]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/#setup-your-environment

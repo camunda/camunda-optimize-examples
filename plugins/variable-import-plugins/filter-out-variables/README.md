@@ -148,6 +148,6 @@ binary variables).
 
 [2]: src/main/java/org/camunda/optimize/examples/FilterOutSensitiveVariables.java
 [3]: pom.xml
-[4]: https://docs.camunda.org/optimize/latest/technical-guide/optimize-explained/import/import-overview/
+[4]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/
 [5]: ../README.md
-[6]: https://docs.camunda.org/optimize/latest/technical-guide/plugins/#setup-your-environment
+[6]: https://docs.camunda.io/docs/self-managed/optimize-deployment/plugins/plugin-system/#setup-your-environment

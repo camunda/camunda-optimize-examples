@@ -1,7 +1,7 @@
 # Optimize Event Ingestion Kafka Adapter
 
-In Optimize you can [ingest event mesages from external systems](https://docs.camunda.org/optimize/latest/technical-guide/event-ingestion-rest-api/)
-that can be used to create [Event Based Processes](https://docs.camunda.org/optimize/latest/user-guide/event-based-processes/)
+In Optimize you can [ingest event mesages from external systems](https://docs.camunda.io/docs/apis-clients/optimize-api/event-ingestion/)
+that can be used to create [Event Based Processes](https://docs.camunda.io/optimize/userguide/additional-features/event-based-processes/)
 
 The following diagram should give you a better understanding of how this adapter integrates with Optimize:
 
@@ -81,10 +81,10 @@ The CloudEvent interface classes are obtained via this Maven Dependency:
 ```
 
 ## Optimize Ingestion REST-API client
-The final key component of this example is the [Optimize Ingestion REST-API client](https://docs.camunda.org/optimize/latest/technical-guide/event-ingestion-rest-api/) implementation.
+The final key component of this example is the [Optimize Ingestion REST-API client](https://docs.camunda.io/docs/apis-clients/optimize-api/event-ingestion/) implementation.
 It can be found in the class [`org.camunda.optimize.examples.event.kafka.OptimizeCloudEventClient`][4], it accepts a list of CloudEvents and forwards them to the Optimize Ingestion REST-API.
 In order to do that it also provides the, on Optimize side, configured API 
-[`accessToken`](https://docs.camunda.org/optimize/latest/technical-guide/setup/configuration/#event-ingestion-rest-api-configuration) in the `Authorization` header of the request.
+[`accessToken`](https://docs.camunda.io/docs/apis-clients/optimize-api/event-ingestion/#authorization) in the `Authorization` header of the request.
 
 ```java
 public class OptimizeCloudEventClient {
@@ -95,7 +95,7 @@ public class OptimizeCloudEventClient {
     log.debug("Try to ingest {} events into Optimize", cloudEvents.size());
 
     // Use Optimize Event Ingestion API
-    // see https://docs.camunda.org/optimize/latest/technical-guide/event-ingestion-rest-api/
+    // see https://docs.camunda.io/docs/apis-clients/optimize-api/event-ingestion/
     final HttpHeaders headers = new HttpHeaders();
     headers.setContentType(MediaType.APPLICATION_JSON);
     // Provide the secret accessToken configured via `eventBasedProcess.eventIngestion.accessToken` in Optimize
