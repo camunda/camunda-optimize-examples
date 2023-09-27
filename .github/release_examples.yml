@@ -1,0 +1,72 @@
+name: Release Camunda Optimize Examples repo.
+
+on:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      RELEASE_VERSION:
+        required: true
+        description: 'Version to release. Applied to pom.xml and Git tag.'
+        default: '0.0.0'
+      DEVELOPMENT_VERSION:
+        required: true
+        description: 'Next development version.'
+        default: '0.1.0-SNAPSHOT'
+      BRANCH:
+        required: true
+        description: 'The branch used for the release checkout.'
+        default: '0.0.0'
+      PUSH_CHANGES:
+        required: true
+        description: 'Should the changes be pushed to remote locations.'
+        default: true
+      DOCKER_LATEST:
+        required: true
+        description: 'Should the docker image be tagged as latest.'
+        default: true
+      ADDITIONAL_DOCKER_TAG:
+        required: false
+        description: 'Any additional tag that should be added to the docker image.'
+        default: '0.0.0'
+      RELEASE_EXAMPLES:
+        required: true
+        description: 'Should an example repository be released.'
+        default: false
+
+jobs:
+  build:
+    name: Execute Release and Upload to Download Center
+    strategy:
+      fail-fast: true
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Import Secrets
+          id: secrets
+          uses: hashicorp/vault-action@v2.5.0
+          with:
+            url: ${{ secrets.VAULT_ADDR }}
+            method: approle
+            roleId: ${{ secrets.VAULT_ROLE_ID }}
+            secretId: ${{ secrets.VAULT_SECRET_ID }}
+            secrets: |
+              secret/data/products/infra/ci/infra-core GITHUB_OPTIMIZE_APP_KEY;
+
+      - name: Generate a GitHub token
+        id: github-token
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: 81875
+          private_key: ${{ steps.secrets.outputs.GITHUB_OPTIMIZE_APP_KEY }}
+
+      - name: Trigger release examples repo
+        if: inputs.RELEASE_EXAMPLES == 'true'
+        working-directory: camunda-optimize-examples
+        env:
+          GITHUB_TOKEN: ${{ steps.github-token.outputs.token }}
+          GITHUB_APP_ID: 81875
+          RELEASE_VERSION: 2.16.0
+          DEVELOPMENT_VERSION: 2.16.0-SNAPSHOT
+          BRANCH: andreastestbranch
+        run: |
+          .github/scripts/update-example-pom.sh
