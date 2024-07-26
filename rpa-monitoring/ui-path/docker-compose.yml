@@ -35,7 +35,7 @@ services:
     restart: always
     mem_limit: 2g
   cambpm:
-    image: registry.camunda.cloud/camunda-bpm-platform-ee:7.14.0
+    image: registry.camunda.cloud/cambpm-ee/camunda-bpm-platform-ee:7.14.0
     container_name: cambpm
     environment:
       - TZ=Europe/Berlin
