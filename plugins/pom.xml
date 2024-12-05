@@ -6,7 +6,7 @@
   <parent>
     <groupId>org.camunda.optimize.example</groupId>
     <artifactId>camunda-optimize-examples</artifactId>
-    <version>3.14.0-SNAPSHOT</version>
+    <version>3.11.16</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
 
