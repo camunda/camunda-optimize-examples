@@ -6,6 +6,7 @@ the plugin system).
 | Optimize Version | Link                                                                           | Checkout command     |
 |------------------|--------------------------------------------------------------------------------|----------------------|
 | Latest           | [Master branch](https://github.com/camunda/camunda-optimize-examples)          | `git checkout master` |
+| 3.14.0           | [3.13.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.14.0) | `git checkout 3.14.0` |
 | 3.13.0           | [3.13.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.13.0) | `git checkout 3.13.0` |
 | 3.12.0           | [3.12.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.12.0) | `git checkout 3.12.0` |
 | 3.11.0           | [3.11.0 tag](https://github.com/camunda/camunda-optimize-examples/tree/3.11.0) | `git checkout 3.11.0` |
